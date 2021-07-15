@@ -1,29 +1,24 @@
-//var myString = 'I\'m a "fun ninja" string';
+var myArray = new Array();
+myArray[0] = 8;
+myArray[1] = "hello";
 
-/*console.log(myString.length); // zwraca ilosc liter*/
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Kasia";
 
-/*console.log(myString.toUpperCase()); // zwraca duze litery*/
+myCar.drive = function(){
+    console.log("now driving");
+};
 
-/*console.log(myString.toLowerCase()); //zwraca małe litery */
+myCar.drive();
 
-/*console.log(myString.indexOf("string")); // zwraca w którym momencie zaczyna się dane słowo */
+var myCar2 = {
+    
+    maxSpeed:70,
+    driver:"Net Ninja", 
+    drive: function(speed, time){
+        console.log(speed * time);} 
+};
 
-/*if (myString.indexOf("ninja") === -1){
-    console.log("the word ninja is not in the string");
-}
-else{
-    console.log("the word ninja starts at position " + myString.indexOf("ninja"));
-}
-*/
-
-/*var String1 = "abc";
-
-var String2 = "ABC";
-
-console.log(String1.toLowerCase() === String2.toLowerCase());*/
-
-var String1 = "abc";
-
-var String2 = "bcd";
-
-console.log(String1 < String2); /* jest to prawda bo "a" jest przed "b" w alfabecie, natomiast jeżeli B byłoby z wielkiej litery to będzie false */
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3);
