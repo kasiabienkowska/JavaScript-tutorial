@@ -1,27 +1,35 @@
- 
-    var Car =function(maxSpeed, driver) {
+/*var myDate = new Date();
+console.log(myDate);
 
-        this.maxSpeed = maxSpeed;
-        this.driver = driver;
-        this.drive = function (speed, time) {
-            console.log(speed * time);
+var myPastDate = new Date(1545, 11,2, 10, 30,15) ;
+var myFutureDate = new Date(2515, 0,31, 10, 30,15);
 
-        };
+console.log(myPastDate);
+console.log(myFutureDate); */
 
-        this.logDriver = function()
-        {
-            console.log("driver name is " + this.driver);
+var birthday = new Date(1985, 0, 15, 11, 15, 25);
+var birthday2 = new Date(1985, 0, 15, 11, 15, 25);
 
-        };
+//get the month of the date (0-11)
+console.log(birthday.getMonth());
 
-    }
+//get the full year (YYYY)
+console.log(birthday.getFullYear());
 
-var myCar = new Car(70, "Ninja Man");
-var myCar2 = new Car(40, "Kasia");
-var myCar3 = new Car(10, "Srasia");
-var myCar4 = new Car(90, "James Bond");
+//get the date of the month
+console.log(birthday.getDate());
 
-myCar.drive(30,5);
-myCar3.logDriver();
+//get the day of the week (0-6)
+console.log(birthday.getDay());
 
+//get the hour od the date (0-23)
+console.log(birthday.getHours());
 
+//get the number of miliseconds since 1st Jan 1970
+console.log(birthday.getTime());
+
+if(birthday.getTime()==birthday2.getTime()){
+    console.log("birthdays are equal");
+} else{
+    console.log("birthdays are not equal");
+}
