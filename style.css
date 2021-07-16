@@ -1,4 +1,4 @@
-body {
+/*body {
     background: #eee;
 }
 
@@ -16,7 +16,7 @@ body {
     font-weight: bold;
     opacity: 0;
 
-    /* Set transitions up. */
+    //Set transitions up. 
     -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
     transition: max—height 0.7s;
@@ -24,7 +24,7 @@ body {
 
 #message.show {
     opacity: 1;
-    /* Set transitions up. */
+    //Set transitions up.
     -webkit-transition: max-height 0.7s;
     -moz-transition: max-height 0.7s;
     transition: max-height 0.7s;
@@ -42,3 +42,5 @@ body {
     transition: background 0.7s;
 
 }
+
+*/

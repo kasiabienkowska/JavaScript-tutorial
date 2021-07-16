@@ -1,33 +1,13 @@
-/*var myMessage = document.getElementById("message");
+var myForm = document.forms.myForm;
+var message = document.getElementById("message");
 
-function showMessage(){
+myForm.onsubmit = function(){
 
-    myMessage.className = "show";
-}
-
-setTimeout(showMessage, 3000)
-*/
-
-
-var colourChanger = document.getElementById("colour-changer");
-var colours = ["red", "blue", "green", "pink"];
-var counter = 0;
-
-function changeColour(){
-   
-   if (counter >= colours.length){
-       counter = 0;
-   }
-   colourChanger.style.background = colours[counter];
-   counter++;
-
-}
-
-var myTimer = setInterval(changeColour, 3000);
-
-colourChanger.onclick = function(){
-
-    clearInterval(myTimer);
-    colourChanger.innerHTML = "Timer stopped";
-
+    if(myForm.name.value == ""){
+        message.innerHTML = "Please enter the name"
+        return false;
+    } else{
+        message.innerHTML = "";
+        return true;
+    }
 };
